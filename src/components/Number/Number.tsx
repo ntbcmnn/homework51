@@ -1,8 +1,10 @@
-const Number = ({ num }: { num: number }) => {
+import './Number.css';
+
+const Number = ({num}: { num: number }) => {
     return (
-            <div className="number">
-                {num}
-            </div>
+        <div className="number">
+            {num}
+        </div>
     );
 };
 
