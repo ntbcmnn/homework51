@@ -1,6 +1,6 @@
-import './App.css'
-import {useState} from "react";
-import Number from "./components/Number/Number.tsx";
+import './App.css';
+import {useState} from 'react';
+import Number from './components/Number/Number.tsx';
 
 const App = () => {
     const [numbers, setNumbers] = useState<number[]>([5, 11, 16, 23, 32]);
@@ -19,17 +19,17 @@ const App = () => {
 
     return (
         <>
-            <div className="container">
-                <div className="numbers-container">
+            <div className='container'>
+                <div className='numbers-container'>
                     {numbers.map((num: number, index: number) => (<Number key={index} num={num}/>))}
                 </div>
 
-                <button type={"button"} className={"changeBtn"} onClick={changeNumbers}>
-                    <img src="https://www.svgrepo.com/show/18461/refresh.svg" alt="regenerate numbers"/>
+                <button type={'button'} className={'changeBtn'} onClick={changeNumbers}>'<img
+                    src='https://www.svgrepo.com/show/18461/refresh.svg' alt='regenerate numbers'/>
                 </button>
             </div>
         </>
-    )
+    );
 };
 
-export default App
+export default App;
